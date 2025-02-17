@@ -12,7 +12,7 @@ require('dotenv').config();
 const app = express();
 app.use(express.json());
 app.use(Cors());
-const PORT =  8000
+const PORT =  process.env.PORT || 8000 
 const mongo_uri = process.env.MONGO_URI
 
 app.use('/auth',AuthRouter);

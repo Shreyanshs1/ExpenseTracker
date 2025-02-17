@@ -27,7 +27,9 @@ function Home() {
       navigate('/login')
     },1000)
   }
-  const baseUrl="http://localhost:8000"
+  
+  //BaseURL
+  const baseUrl="https://expensetracker-liig.onrender.com"
 
   const fetchExpenses = async ()=>{
     try{

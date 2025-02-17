@@ -9,7 +9,7 @@ function Login() {
         password:''
     })
     //Base Url Here
-    const baseUrl="http://localhost:8000/auth"
+    const baseUrl="https://expensetracker-liig.onrender.com/auth"
 
     const navigate = useNavigate() //React hook for navigate
 
