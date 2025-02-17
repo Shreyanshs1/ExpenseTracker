@@ -1,0 +1,156 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Home Page Container Styles */
+  .home-container {
+    width: 400px;
+    margin: 20px auto;  /* horizontally centered */
+    /* Starts from the top with a small top margin */
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Ensure ample spacing between major components */
+  .heading,
+  .transaction-form,
+  .expense-list {
+    margin-bottom: 30px;
+  }
+  
+  /* Heading Component Styles */
+  .heading {
+    text-align: center;
+  }
+  
+  .user-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .user-name {
+    font-size: 16px;
+  }
+  
+  .logout-btn {
+    background: #6200ea;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+  
+  .logout-btn:hover {
+    background: #3700b3;
+  }
+  
+  h1 {
+    margin: 10px 0;
+  }
+  
+  /* Totals Display Styles */
+  .totals {
+    display: flex;
+    margin: 20px 0;
+    font-size: 1.2rem;
+  }
+  
+  .totals > div {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  /* Divider between income and expense */
+  .totals > div:first-child {
+    border-right: 1px solid #ccc;
+  }
+  
+  /* Instead of using red text, use a colored left border to denote the type */
+  .income {
+    border-left: 4px solid #388e3c; /* green border for income */
+    padding-left: 8px;
+  }
+  
+  .expense {
+    border-left: 4px solid red; /* blue border for expense */
+    padding-left: 8px;
+  }
+  
+  /* Form Component Styles */
+  .transaction-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-field {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .btn {
+    padding: 10px;
+    background: #6200ea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background: #3700b3;
+  }
+  
+  /* Expenses Component Styles */
+  .expense-list {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .delete-img{
+    width: 20px;
+    margin-left: 12px;
+    border-radius: 50px;
+  }
+.delete-img:hover{
+    background-color: rgba(255, 0, 0, 0.415);
+  }
+
+  
+  .expense-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border-left: 5px solid transparent;
+    border-radius: 5px;
+  }
+
+  .expenses{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  /* Use similar border indicators for individual transactions */
+  .expense-list li.positive {
+    border-left-color: #388e3c;
+  }
+  
+  .expense-list li.negative {
+    border-left-color: red;
+  }
+  
